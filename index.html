@@ -9,6 +9,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- PT Sans font-->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +39,14 @@
                 </div>
                 <div class="row">
             		<div class="container">
-                        <img src="img/akitchen.png" width="400px">
+                        <div class="row logo">
+                            <div class="akitchen">
+                                <img src="img/akitchen_primary.png" width="400px">
+                            </div>
+                            <div class="registration">
+                                <a href="" class="btn btn-default regbtn"> Пойти на встречу </a>
+                            </div>
+                        </div>
                     </div>
             	</div>
             </div>
@@ -44,32 +54,38 @@
 
         <div class="row history">
             <div class="container">
-                <div class="agilerussia">
+                
+                <div class="col-xs-12 col-md-3">
+                    <div class="eventdate">
+                        <img src="img/kitchendate.png" width="200px">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9 agilerussia">
                     <h1> Agile Russia </h1>
-                    <p> Всероссийское сообщество специалистов практикующих гибкие и бережливые подходы в разработке программного обсеспечения с 2009 года проводит встречи для обмена практическим опытом Agile Kitchen.</p> 
+                    <p> Всероссийское сообщество специалистов практикующих гибкие и бережливые подходы в разработке программного обсеспечения с 2009 года проводит встречи для обмена практическим опытом Agile Kitchen.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row program_nav">
+            <div class="container navigation">
+                <div class="row">    
+                    <div class="centered">
+                        <h1> <strong>18 апреля</strong> <h1>
+                        <h2> Мы приглашаем Вас на долгожданную встречу <br> 
+                            <strong> Agile Kitchen в Санкт-Петерурге.</strong></h2>
+                        <a href="" class="btn btn-default action"> Спикеры </a>
+                        <a href="" class="btn btn-default action"> Программа </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row program">
-            <div class="container navigation">
-                <div class="row">    
-                    <nav class="navbar" role="navigation">
-                        <div class="container navabar">
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav navbar secnav">
-                                    <li><a href="#">Спикеры</a></li>
-                                    <li><a href="#">Программа</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            
+        <div class="row program">    
             <div class="container speakers">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Urazbaev.png" alt="..." class="img-circle">
                             <h4> Асхат Уразбаев </h4>
@@ -78,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Petkov.png" alt="..." class="img-circle">
                             <h4> Семен Петков </h4>
@@ -91,7 +107,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Ryzhikov.png" alt="..." class="img-circle">
                             <h4> Михаил Рыжиков </h4>
@@ -100,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Moskalenko.png" alt="..." class="img-circle">
                             <h4> Вячеслав Москаленко </h4>
@@ -113,7 +129,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/RyzhikovN.png" alt="..." class="img-circle">
                             <h4> Николай Рыжиков </h4>
@@ -122,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Martiushev.png" alt="..." class="img-circle">
                             <h4> Александр Мартюшев </h4>
@@ -136,7 +152,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Tolmachev.png" alt="..." class="img-circle">
                             <h4> Андрей Толмачев </h4>
@@ -145,7 +161,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Tregubova.png" alt="..." class="img-circle">
                             <h4> Екатерина Трегубова </h4>
@@ -158,7 +174,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Petrashev.png" alt="..." class="img-circle">
                             <h4> Дмитрий Петрашев </h4>
@@ -167,7 +183,7 @@
                         </div>
                     </div>    
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Kotlov.png" alt="..." class="img-circle">
                             <h4> Сергей Котлов </h4>
@@ -180,7 +196,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/Atsik.png" alt="..." class="img-circle">
                             <h4> Александр Атцик </h4>
@@ -189,11 +205,11 @@
                         </div>
                     </div>    
 
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-md-6">
                         <div class="speaker">
                             <img src="img/profile.png" alt="..." class="img-circle">
                             <h4> Присоединяйся! </h4>
-                            <button type="button" class="btn btn-default">Подать доклад</button>
+                            <a class="btn btn-default" href="mailto:piterunited@gmail.com">Подать доклад</a>
                         </div>
                     </div>
                 </div>
@@ -206,17 +222,24 @@
 
         <div class="row place">
             <div class="container">
-                <div class="col-md-6">
+                <div class="col-xs-12 col-md-6">
                     <div class="address">
                         <h2>Санкт-Петерург</h2>
                         <h4>БЦ "Золотая Долина"</h4>
+                        <h4>м. Ладожская</h4>
                         <h4>пл. Карла Фаберже 8/2</h4>
                         <h4> 7 этаж, офис компании SEMrush</h4>
                     </div>
-                </div>
-                <div class="col-md-6">
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.8951036023518!2d30.438757751342777!3d59.933882746565814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631fcfbc6f815%3A0x285c0dc215e7cc01!2sploshchad&#39;+Karla+Faberzhe%2C+8%2F2%2C+Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1397076860439" width="400" height="300" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="regform">
+                        <h2> Регистрация </h2>
+                        <script defer="defer" data-timepad-widget-v2="event_register" data-timepad-customized="2708" src="http://timepad.ru/js/tpwf/loader/min/loader.js">
+                            (function(){return {"event":{"id":"115132","org":"1382","subdomain":"agilerussia"}}; })();
+                        </script>
                     </div>
                 </div>
             </div>
