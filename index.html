@@ -76,15 +76,18 @@
                         <h1> <strong>18 апреля</strong> <h1>
                         <h2> Мы приглашаем Вас на долгожданную встречу <br> 
                             <strong> Agile Kitchen в Санкт-Петерурге.</strong></h2>
-                        <a href="" class="btn btn-default action"> Спикеры </a>
-                        <a href="" class="btn btn-default action"> Программа </a>
+                        <a class="btn btn-default action" onclick="selectspeakers()"> Спикеры </a>
+                        <a class="btn btn-default action" onclick="selectprogram()"> Программа </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row program" id="program">    
-            <div class="container speakers">
+
+        <div class="row program" id="program">
+
+        <!-- Спикеры -->    
+            <div class="container speakers" id="speakers">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <div class="speaker">
@@ -216,25 +219,105 @@
                 </div>
 
             </div>
+
+            <!-- Программа -->
             
-            <div class="container programma">
+            <div class="container programma" id="programma">
+                <h2> Докладная секция</h2>
+                <table class="table">
+                    <tr>
+                        <td>10.00-10.40</td>
+                        <td>Прощай регрессия, Мартюшев Александр</td>
+                        <td>ScrumTrek</td>
+                    </tr>
+                    <tr>
+                        <td>10.50-11.30</td>
+                        <td>Рождение и эволюция Agile-процесса в enterprise-среде, Толмачев Андрей</td>
+                        <td>OpenWay</td>
+                    <tr>
+                        <td>11.40-12.20</td>
+                        <td>Инженерные практики в отдельно взятой комманде, Рыжиков Николай</td>
+                        <td>HealthSamurai</td>
+                    </tr>
+                    <tr>    
+                        <td>12.30-13.10</td>
+                        <td>Парное программирование как практика построения Agile команд, Трегубова Екатерина</td>
+                        <td>VIAcode</td>
+                    </tr>
+                    <tr>    
+                        <td>13.10-14.10</td>
+                        <td>Обеденный перерыв</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14.10-14.50</td>
+                        <td>Системный подход к изменению MindSet, Уразбаев Асхат</td>
+                        <td>ScrumTrek</td>
+                    </tr>
+                    <tr>
+                        <td>15.00-15.40</td>
+                        <td>Об эволюции бэклога в отдельно взятой компании, Петрашев Дмитрий</td>
+                        <td>Dell Software Group</td>
+                    </tr>
+                    <tr>    
+                        <td>15.50-16.30</td>
+                        <td>Зачем нужен отдел аналитики в Agile или рождение коллективного разума, Атцик Александр</td>
+                        <td>Dins</td>
+                    </tr>
+                    <tr>    
+                        <td>16.40-17.20</td>
+                        <td>От иерархии к сети - это возможно?, Котлов Сергей</td>
+                        <td>Happy Melly</td>
+                    </tr>
+                    <tr>    
+                        <td>17.30-18.00</td>
+                        <td>Профессионально-образовательная экосистема Piter United, Рыжиков Михаил</td>
+                        <td>HealthSamurai</td>
+                    </tr>
+                </table>
+
+                <h2> Мастер-классы</h2>
+                <table class="table">
+                    <tr>
+                        <td>10.00-12.00</td>
+                        <td>Марсианский скрам, Петков Семен и Москаленко Слава</td>
+                        <td>Luxoft</td>
+                    </tr>
+                    <tr>    
+                        <td>14.10-18.00</td>
+                        <td>Поиграем в GetKanban, Мартюшев Александр и Рыжиков Михаил</td>
+                        <td>ScrumTrek</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
+<!-- Место и Регистрация -->
+
         <div class="row place" id="place">
             <div class="container">
+                
                 <div class="col-xs-12 col-md-6">
                     <div class="address">
-                        <h2>Санкт-Петерург</h2>
+                        <h2>Санкт-Петербург</h2>
                         <h4>БЦ "Золотая Долина"</h4>
                         <h4>м. Ладожская</h4>
                         <h4>пл. Карла Фаберже 8/2</h4>
                         <h4> 7 этаж, офис компании SEMrush</h4>
                     </div>
+                    
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.8951036023518!2d30.438757751342777!3d59.933882746565814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631fcfbc6f815%3A0x285c0dc215e7cc01!2sploshchad&#39;+Karla+Faberzhe%2C+8%2F2%2C+Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1397076860439" width="400" height="300" frameborder="0" style="border:0"></iframe>
                     </div>
+
+                    <div class="sponsors">
+                        <h2> Организаторы </h2>
+                        <img src="img/scrumtrek.png" width="100px">
+                        <img src="img/semrush.png" width="100px">
+                        <img src="img/piterunited.png" width="100px">
+                    </div>
                 </div>
+
                 <div class="col-xs-12 col-md-6">
                     <div class="regform">
                         <h2> Регистрация </h2>
@@ -243,12 +326,12 @@
                         </script>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <div class="row footer" id="footer">
             <div class="container">
-
                 <h3>
                     <span class="glyphicon glyphicon-envelope"></span>
                     <a href="mailto:piterunited@gmail.com"> piterunited@gmail.com </a>
@@ -258,6 +341,27 @@
 
     </div>
 
+    <script type="text/javascript">
+        function selectprogram(){
+            toHide = document.getElementById("speakers");
+            toVisible = document.getElementById("programma");
+            console.log(toHide);
+            console.log(toVisible);
+
+
+            toHide.style.display = "none";
+            toVisible.style.display = "block";
+        }
+
+        function selectspeakers(){
+            toHide = document.getElementById("programma");
+            toVisible = document.getElementById("speakers");
+
+            toHide.style.display = "none";
+            toVisible.style.display = "block";
+        }
+    </script>
+    
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

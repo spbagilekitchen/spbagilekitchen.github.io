@@ -130,6 +130,10 @@ ul.nav a:hover{
 	color: white;
 }
 
+.speakers{
+	display: block;
+}
+
 .speaker h4{
 	margin-left: 160px;
 	padding-top: 20px;
@@ -147,15 +151,29 @@ ul.nav a:hover{
 	float: left;
 }
 
+.programma{
+	font-size: 18px;
+	display: none;
+}
+
 .place{
 	background-color: #f7f7f9;
 	padding-bottom: 50px;
 }
 
-.place .address, .map{
+.place .address, .map, .sponsors{
 	width: 80%;
 	margin-right: auto;
 	padding-top: 50px;
+}
+
+.place h2{
+	margin-bottom: 20px;
+}
+
+.sponsors img{
+	margin-top: 20px;
+	margin-right: 40px;
 }
 
 .regform{
